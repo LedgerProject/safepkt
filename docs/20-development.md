@@ -25,8 +25,8 @@ which should output
 ```
 {
   "steps": [
-    "llvm_bitcode_generation",
-    "symbolic_execution"
+    "program_verification",
+    "source_restoration"
   ]
 }
 ```
