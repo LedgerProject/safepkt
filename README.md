@@ -20,10 +20,10 @@ See [SafePKT description](https://ledgerproject.github.io/home/#/teams/SafePKT)
 As of today, SafePKT offers an opportunity for
  - generating [`LLVM bitcode`](https://llvm.org/docs/BitCodeFormat.html) from a `rust` binary program,
  - running [KLEE symbolic engine](http://klee.github.io/) from the output
- - keeping a history of past symbolic executions
+ - verifying rust-based smart contracts implemented on top of [ink! framework](https://github.com/paritytech/ink/tree/v2.1.0)
 
 Such program must be minimalist as we're in a prototyping phase i.e.  
-it should consist in a single-file program (`main.rs`) without dependencies  
+it should consist in a single-file program (`lib.rs`) without dependencies  
 other than [`rvt` verification-annotations](https://github.com/LedgerProject/safepkt_backend/blob/main/src/domain/project/manifest.rs),  
 as there are some concerns remaining to be covered like:
  - the security aspects coming along with the compilation and execution of arbitrary source code
