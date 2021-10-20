@@ -2,18 +2,14 @@
 
 ## Program edition
 
-As you can see, this [example depending on KLEE](https://github.com/project-oak/rust-verification-tools/blob/main/demos/simple/klee/src/main.rs) from the Rust Verification Tools has been reused
-to demonstrate the analysis of a very basic program.
+As you can see, this [example from !ink v2.1.0](https://github.com/paritytech/ink/blob/v2.1.0/examples/multisig_plain/lib.rs) has been reused
+to demonstrate the analysis of a smart contract written with Rust.
 
-![Symbolic Execution](./img/step-1-program-edition.png?raw=true)
+![Program edition](./img/step-1-program-edition.png?raw=true)
 
-## LLVM bitcode generation
+## Program verification
 
-![LLVM bitcode generation](./img/step-2-llvm-bitcode-generation.png?raw=true)
-
-## Symbolic execution
-
-![Symbolic execution](./img/step-3-symbolic-execution.png?raw=true)
+![Program verification](./img/step-2-program-verification.png?raw=true)
 
 ## Table of contents
 
