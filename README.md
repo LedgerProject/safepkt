@@ -33,7 +33,7 @@ as there are some concerns remaining to be covered like:
  - the compatibility of KLEE with the latest LLVM intrinsics, which could be leveraged for compiling such programs
 
 Some screenshots of the successive steps execution can be found
- - in the [web frontend preview section](../../blob/main/docs/00-frontend-web-preview.md),
+ - in the [web frontend preview section](../../blob/main/docs/00-preview-web-frontend.md),
  - in the [CLI preview section](../../blob/main/docs/03-preview-cli.md) or
  - in the [VSCode preview section](../../blob/main/docs/05-preview-vscode.md)
 
