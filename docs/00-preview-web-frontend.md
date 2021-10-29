@@ -14,8 +14,8 @@ to demonstrate the analysis of a smart contract written with Rust.
 ## Table of contents
 
  - [README](../README.md)
- - [Section 03 - CLI Preview](./03-cli-preview.md)
- - [Section 05 - VSCode Preview](./05-vscode-preview.md)
+ - [Section 03 - CLI Preview](./03-preview-cli.md)
+ - [Section 05 - VSCode Preview](./05-preview-vscode.md)
  - [Section 10 - Installation](./10-installation.md)
  - [Section 20 - Contribution](./20-contribution.md)
 

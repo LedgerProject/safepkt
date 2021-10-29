@@ -40,8 +40,8 @@ tail -fn100 ./backend/log/backend.log
 ## Table of contents
 
  - [README](../README.md)
- - [Section 00 - Web Frontend Preview](./00-frontend-preview.md)
- - [Section 03 - CLI Preview](./03-cli-preview.md)
- - [Section 05 - VSCode Preview](./05-vscode-preview.md)
+ - [Section 00 - Web Frontend Preview](./00-preview-web-frontend.md)
+ - [Section 03 - CLI Preview](./03-preview-cli.md)
+ - [Section 05 - VSCode Preview](./05-preview-vscode.md)
  - [Section 10 - Installation](./10-installation.md)
 

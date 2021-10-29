@@ -10,8 +10,8 @@ to demonstrate the analysis of a smart contract written with Rust.
 ## Table of contents
 
  - [README](../README.md)
- - [Section 00 - Web Frontend Preview](./00-frontend-preview.md)
- - [Section 05 - VSCode Preview](./05-vscode-preview.md)
+ - [Section 00 - Web Frontend Preview](./00-preview-web-frontend.md)
+ - [Section 05 - VSCode Preview](./05-preview-vscode.md)
  - [Section 10 - Installation](./10-installation.md)
  - [Section 20 - Contribution](./20-contribution.md)
 
