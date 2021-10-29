@@ -5,11 +5,11 @@
 As you can see, this [example from !ink v2.1.0](https://github.com/paritytech/ink/blob/v2.1.0/examples/multisig_plain/lib.rs) has been reused
 to demonstrate the analysis of a smart contract written with Rust.
 
-![Program edition](./img/step-1-program-edition.png?raw=true)
+![Program edition](./img/frontend-step-1-program-edition.png?raw=true)
 
 ## Program verification
 
-![Program verification](./img/step-2-program-verification.png?raw=true)
+![Program verification](./img/frontend-step-2-program-verification.png?raw=true)
 
 ## Table of contents
 
