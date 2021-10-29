@@ -21,6 +21,7 @@ As of today, SafePKT offers an opportunity for
  - generating [`LLVM bitcode`](https://llvm.org/docs/BitCodeFormat.html) from a `rust` binary program,
  - running [KLEE symbolic engine](http://klee.github.io/) from the output
  - verifying rust-based smart contracts implemented on top of [ink! framework](https://github.com/paritytech/ink/tree/v2.1.0)
+ - fuzzing programs, which tests would have been enriched by following [`propverify`](https://github.com/project-oak/rust-verification-tools/blob/main/demos/simple/string/src/main.rs) conventions
 
 Such program must be minimalist as we're in a prototyping phase i.e.  
 it should consist in a single-file program (`lib.rs`) without dependencies  
@@ -28,8 +29,13 @@ other than [`rvt` verification-annotations](https://github.com/LedgerProject/saf
 as there are some concerns remaining to be covered like:
  - the security aspects coming along with the compilation and execution of arbitrary source code
  - the compatibility of such programs with the underlying verification tools
+ - the compatibility of KLEE, the symbolic execution engine with such programs dependencies
+ - the compatibility of KLEE with the latest LLVM intrinsics, which could be leveraged for compiling such programs
 
-Some screenshots of the successive steps can be found in the [preview section](../../blob/main/docs/00-preview.md).
+Some screenshots of the successive steps execution can be found
+ - in the [frontend preview section](../../blob/main/docs/00-fontend-preview.md),
+ - in the [CLI preview section](../../blob/main/docs/00-cli-preview.md) or
+ - in the [VSCode preview section](../../blob/main/docs/00-vscode-preview.md)
 
 ## Install
 
