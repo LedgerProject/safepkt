@@ -1,0 +1,31 @@
+name: Docs to PDF
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - './docs/30-latest-mvp-for-safepkt-smart-contract-verifier.md'
+      - 'docs/img/**'
+
+jobs:
+
+  convert_markdown_to_pdf:
+
+    name: Build PDF
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v2
+
+      - uses: baileyjm02/markdown-to-pdf@v1
+        with:
+          input_dir: docs
+          output_dir: pdfs
+          images_dir: docs/img
+          build_html: false
+
+      - uses: actions/upload-artifact@v1
+        with:
+          name: latest-mvp-for-safepkt-smart-contract-verifier.pdf
+          path: pdfs
