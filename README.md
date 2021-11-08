@@ -10,7 +10,7 @@ See [SafePKT description](https://ledgerproject.github.io/home/#/teams/SafePKT)
 ## Table of contents
 
  - [Preview](#preview)
- - [Learn more about this final minimal viable product](#minimal-viable-product)
+ - [Learn more about this final minimal viable product](#learn-more-about-this-final-minimal-viable-product)
  - [Install](#install)
  - [Contribute](#contribute)
  - [Acknowledgement](#acknowledgment)
