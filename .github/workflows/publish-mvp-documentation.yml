@@ -27,6 +27,7 @@ jobs:
 
 
   publication:
+
     needs: release
 
     name: Make PDF from document in markdown format
@@ -34,6 +35,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+      - name: Set env
+        run: echo "RELEASE_NAME=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
 
       - name: Install packages
         run: sudo apt-get install bash curl jq make
