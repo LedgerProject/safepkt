@@ -10,7 +10,24 @@ on:
 
 jobs:
 
-  convert_markdown_to_pdf:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Set env
+        run: echo "RELEASE_NAME=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+
+      - name: Create a release
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          prerelease: false
+          automatic_release_tag: ${{ env.RELEASE_NAME }}
+
+
+  publication:
+    needs: release
 
     name: Make PDF from document in markdown format
 
