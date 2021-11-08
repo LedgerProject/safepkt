@@ -3,7 +3,7 @@
 This project is implemented in the context of the European [NGI LEDGER program](https://ledger-3rd-open-call.fundingbox.com/).
 
 This prototype aims at bringing more automation  
-to the field of software verification tools targeting rust-based programs.
+to the field of software verification tools targeting rust-based smart contracts.
 
 See [SafePKT description](https://ledgerproject.github.io/home/#/teams/SafePKT)
 
