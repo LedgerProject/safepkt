@@ -7,3 +7,6 @@
 [submodule "vscode-plugin"]
 	path = vscode-plugin
 	url = https://github.com/LedgerProject/safepkt_vscode-plugin
+[submodule "termination-analysis-of-the-borrow-checker-of-rust"]
+	path = termination-analysis-of-the-borrow-checker-of-rust
+	url = https://github.com/LedgerProject/safepkt_paper
