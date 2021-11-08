@@ -2,8 +2,8 @@ name: Docs to PDF
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - safepkt-v*.*.*
     paths:
       - './docs/30-latest-mvp-for-safepkt-smart-contract-verifier.md'
       - 'docs/img/**'
