@@ -43,4 +43,4 @@ function publish() {
     "${upload_url}?name=$(date -I)-${release_name}-mvp-documentation.pdf"
 }
 
-publish "${GITHUB_WORKSPACE}"'/'"${RELEASE_NAME}".pdf
+publish "${GITHUB_WORKSPACE}"'/pdfs/30-latest-mvp-for-safepkt-smart-contract-verifier.pdf'

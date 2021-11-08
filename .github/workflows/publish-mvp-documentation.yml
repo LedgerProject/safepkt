@@ -6,7 +6,7 @@ on:
       - safepkt-v*.*.*
     paths:
       - './docs/30-latest-mvp-for-safepkt-smart-contract-verifier.md'
-      - 'docs/img/**'
+      - './docs/img/**'
 
 jobs:
 
@@ -55,7 +55,7 @@ jobs:
         uses: actions/upload-artifact@main
         with:
           path: |
-            ${{ github.workspace }}/${{ env.RELEASE_NAME }}.pdf
+            ${{ github.workspace }}/pdfs/30-latest-mvp-for-safepkt-smart-contract-verifier.pdf
 
       - name: Publish documentation
         run: /bin/bash -c "source $GITHUB_WORKSPACE/.github/workflows/publication/publish-mvp-documentation.sh"
