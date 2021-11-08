@@ -92,6 +92,20 @@ From **3 steps** at the beginning of the project, we simplified the verification
 
  - 🎯 To part away from the web interface by considering the implementation of command-line interface (CLI). The web app was great for prototyping and collecting feedback without having to install the whole suite of tools, which would take at best 20 min to set up. However and as it was stated before, large programs made the UI sluggish and would have required further optimization, new libraries selection. 
 
+As a consequence, the HTTP API exposed by the backend inherited two additional steps (program verification and source restoration), whereas all previous routes except the one listing the available steps have been deprecated: 
+   - POST `/program-verification/{ project_id }`  
+   to run a smart contract verification
+   - GET `/program-verification/{{ project_id }}/report`  
+   to get a report for some program verification 
+   - GET `/program-verification/{{ project_id }}/progress`  
+   to get the completion status of a verification
+   - POST `/source-restoration/{ project_id }`  
+   to restore a previously uploaded source
+   - GET `/source-restoration/{{ project_id }}/report`  
+   to get a report for some source restoration 
+   - GET `/source-restoration/{{ project_id }}/progress`  
+   to get the completion status of a source restoration
+
 ![SafePKT Command-Line Interface](https://i.imgur.com/ZENfXxR.png)
 
 Optimizing the construction of the RVT-based toolset itself was a subtask described in this [public issue](https://github.com/project-oak/rust-verification-tools/pull/149). No official Docker image could be attached to project-oak/rvt project but we eventually managed to publish our own set of images and tags to ease the backend component set up from the official Docker registry, with the latest tag being worth of about 2Gb of compressed image layers available from [https://hub.docker.com/repository/docker/safepkt/rvt](https://hub.docker.com/repository/docker/safepkt/rvt)
