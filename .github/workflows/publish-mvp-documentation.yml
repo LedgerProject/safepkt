@@ -1,4 +1,4 @@
-name: Docs to PDF
+name: Markdown to PDF
 
 on:
   push:
@@ -12,9 +12,14 @@ jobs:
 
   convert_markdown_to_pdf:
 
-    name: Build PDF
+    name: Make PDF from document in markdown format
+
     runs-on: ubuntu-latest
+
     steps:
+
+      - name: Install packages
+        run: sudo apt-get install bash curl jq make
 
       - uses: actions/checkout@v2
 
@@ -25,7 +30,14 @@ jobs:
           images_dir: docs/img
           build_html: false
 
-      - uses: actions/upload-artifact@v1
+      - name: Upload artifact
+        uses: actions/upload-artifact@v1
         with:
-          name: latest-mvp-for-safepkt-smart-contract-verifier.pdf
-          path: pdfs
+          path: |
+            ${{ github.workspace }}/${{ env.RELEASE_NAME }}.pdf
+
+      - name: Publish documentation
+        run: /bin/bash -c "source $GITHUB_WORKSPACE/.github/workflows/publication/publish-mvp-documentation.sh"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_NAME: ${{ env.RELEASE_NAME }}
