@@ -27,10 +27,24 @@ In the same vein as for the frontend component, the command-line binary emitted 
    - the declaration of assumed input values types before having the program intermediate representation (obtained from the previous step) run by KLEE symbolic execution engine
    - the addition of tests also run by KLEE for library-oriented project (what we've eventually decided we would be focusing on)
 
+
 SafePKT depends on the following technologies:
- - Single-page application: [Node.js](https://nodejs.org/), [Typescript](https://www.typescriptlang.org/), [Vue.js](https://vuejs.org/), [NuxtJs](https://nuxtjs.org/)
- - Server-side back-end and command-line application: [Rust](https://www.rust-lang.org/), [Docker engine](https://www.docker.com/products/container-runtime), [Rust Verification Tools](https://project-oak.github.io/rust-verification-tools/), [LLVM](https://llvm.org/), [KLEE](http://klee.github.io/)
- - VS Code extension: [Tree-sitter](https://tree-sitter.github.io/tree-sitter/), [Typescript](https://www.typescriptlang.org/), [VS Code Extension API](https://code.visualstudio.com/api)
+ - Single-page application:
+   - [Node.js](https://nodejs.org/),
+   - [Typescript](https://www.typescriptlang.org/),
+   - [Vue.js](https://vuejs.org/),
+   - [NuxtJs](https://nuxtjs.org/)
+ - Server-side back-end and command-line application:
+   - [Rust](https://www.rust-lang.org/),
+   - [Docker engine](https://www.docker.com/products/container-runtime),
+   - [Rust Verification Tools](https://project-oak.github.io/rust-verification-tools/),
+   - [LLVM](https://llvm.org/),
+   - [KLEE](http://klee.github.io/)
+ - VS Code extension:
+   - [Got](https://github.com/sindresorhus/got/tree/v11.8.2),
+   - [Tree-sitter](https://tree-sitter.github.io/tree-sitter/),
+   - [Typescript](https://www.typescriptlang.org/),
+   - [VS Code Extension API](https://code.visualstudio.com/api)
 
 ## Change log
 
