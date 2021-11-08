@@ -8,6 +8,24 @@ You can find out more about the overall PKT project by going to: https://pkt.cas
 
 In the SafePKT project we are focused on improving software development efficiency (and therefore time to market) for software used within the PKT ecosystem (e.g. PacketCrypt / cjdns). As security breaches in cryptocurrency software often lead to irrecoverable loss, such projects have higher than normal security requirements. However in this innovative and competitive space, time to market is also a critical to a project's overall success. With the help of cutting edge research in the academic space, we are developing improved software verification tools which will be easier to use and more helpful to developers who will apply them to improving software development efficiency and security in projects within the PKT ecosystem.
 
+## Table of contents
+
+ - [The technology](#the-technology)
+ - [Change log](#change-log)
+   - [Phase 1 - Web-based application implementation]()
+   - [Phase 2 - Scope reduction and simplification]()
+   - [Phase 3 - VS Code Extension implementation]()
+ - [Bug fixing and improvements](#bug-fixing-and-improvements)
+   - [Trade-offs](#trade-offs)
+   - [Security concerns](#security-concerns)
+   - [Improvements](#improvements)
+ - [System stability, maintainability](#system-stability-maintainability)
+   - [Ballpark performance](#ballpark-performance)
+   - [VS Code Extension and backend maintenance and deployment](#v-s-code-extension-and-backend-maintenance-and-deployment)
+   - [Frontend improvements](#frontend-improvements)
+   - [Backend configuration](#backend-configuration)
+ - [Links](#links)
+
 ## The Technology
 
 The technology of PKT overall includes [PacketCrypt](https://pkt.cash/PacketCrypt-2020-09-04.pdf) bandwidth-hard proof of work, [Lightning Network](https://en.wikipedia.org/wiki/Lightning_Network), and [cjdns](https://github.com/cjdelisle/cjdns) networking protocol.
