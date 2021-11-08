@@ -38,9 +38,9 @@ Some screenshots of the successive steps execution can be found
  - in the [CLI preview section](../../blob/main/docs/03-preview-cli.md) or
  - in the [VSCode preview section](../../blob/main/docs/05-preview-vscode.md)
 
-## Learn more about this final minimal viable product
+## Learn more about the latest version of our minimal viable product
 
- - [Final MVP for Smart-Contract verification with SafePKT](../../blob/main/docs/30-final-mvp-for-safepkt-smart-contract-verifier.md) 
+ - [Latest MVP for Smart-Contract verification with SafePKT](../../blob/main/docs/30-latest-mvp-for-safepkt-smart-contract-verifier.md) 
 
 ## Install
 

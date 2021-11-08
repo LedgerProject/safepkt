@@ -1,4 +1,4 @@
-# Final MVP for Smart-Contract verification with SafePKT
+# Latest MVP for Smart-Contract verification with SafePKT
 
 SafePKT project is implemented in the context of the European [NGI LEDGER program](https://ledger-3rd-open-call.fundingbox.com/) (see https://ledger-3rd-open-call.fundingbox.com/).
 
