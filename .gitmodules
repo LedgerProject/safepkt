@@ -10,3 +10,6 @@
 [submodule "termination-analysis-of-the-borrow-checker-of-rust"]
 	path = termination-analysis-of-the-borrow-checker-of-rust
 	url = https://github.com/LedgerProject/safepkt_paper
+[submodule "smart-contract-example"]
+	path = smart-contract-example
+	url = https://github.com/LedgerProject/safepkt_smart-contract-example
