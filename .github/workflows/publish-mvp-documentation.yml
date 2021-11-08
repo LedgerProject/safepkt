@@ -31,7 +31,7 @@ jobs:
           build_html: false
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@main
         with:
           path: |
             ${{ github.workspace }}/${{ env.RELEASE_NAME }}.pdf
