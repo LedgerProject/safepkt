@@ -5,8 +5,8 @@ on:
     tags:
       - safepkt-v*.*.*
     paths:
-      - './docs/30-latest-mvp-for-safepkt-smart-contract-verifier.md'
-      - './docs/img/**'
+      - 'docs/30-latest-mvp-for-safepkt-smart-contract-verifier.md'
+      - 'docs/img/**'
 
 jobs:
 

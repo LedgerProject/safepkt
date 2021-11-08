@@ -10,7 +10,7 @@ See [SafePKT description](https://ledgerproject.github.io/home/#/teams/SafePKT)
 ## Table of contents
 
  - [Preview](#preview)
- - [Learn more about this final minimal viable product](#learn-more-about-this-final-minimal-viable-product)
+ - [Learn more about the latest minimal viable product](#learn-more-about-the-latest-version-of-the-minimal-viable-product)
  - [Install](#install)
  - [Contribute](#contribute)
  - [Acknowledgement](#acknowledgment)
@@ -38,7 +38,7 @@ Some screenshots of the successive steps execution can be found
  - in the [CLI preview section](../../blob/main/docs/03-preview-cli.md) or
  - in the [VSCode preview section](../../blob/main/docs/05-preview-vscode.md)
 
-## Learn more about the latest version of our minimal viable product
+## Learn more about the latest version of the minimal viable product
 
  - [Latest MVP for Smart-Contract verification with SafePKT](../../blob/main/docs/30-latest-mvp-for-safepkt-smart-contract-verifier.md) 
 

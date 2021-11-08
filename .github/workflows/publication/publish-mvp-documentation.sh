@@ -40,7 +40,7 @@ function publish() {
     --data-binary @"${documentation}" \
     -H 'Content-Type: application/octet-stream' \
     -H "Authorization: Bearer ${GITHUB_TOKEN}" \
-    "${upload_url}?name=$(date -I)-${release_name}-mvp-documentation.pdf"
+    "${upload_url}?name=${release_name}-mvp-documentation.pdf"
 }
 
 publish "${GITHUB_WORKSPACE}"'/pdfs/30-latest-mvp-for-safepkt-smart-contract-verifier.pdf'
