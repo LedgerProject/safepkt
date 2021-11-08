@@ -27,7 +27,6 @@ In the same vein as for the frontend component, the command-line binary emitted 
    - the declaration of assumed input values types before having the program intermediate representation (obtained from the previous step) run by KLEE symbolic execution engine
    - the addition of tests also run by KLEE for library-oriented project (what we've eventually decided we would be focusing on)
 
-
 SafePKT depends on the following technologies:
  - Single-page application:
    - [Node.js](https://nodejs.org/),
@@ -106,7 +105,7 @@ As a consequence, the HTTP API exposed by the backend inherited two additional s
    - GET `/source-restoration/{{ project_id }}/progress`  
    to get the completion status of a source restoration
 
-![SafePKT Command-Line Interface](https://i.imgur.com/ZENfXxR.png)
+![SafePKT Command-Line Interface](./img/program-verification-in-cli.png?raw=true)
 
 Optimizing the construction of the RVT-based toolset itself was a subtask described in this [public issue](https://github.com/project-oak/rust-verification-tools/pull/149). No official Docker image could be attached to project-oak/rvt project but we eventually managed to publish our own set of images and tags to ease the backend component set up from the official Docker registry, with the latest tag being worth of about 2Gb of compressed image layers available from [https://hub.docker.com/repository/docker/safepkt/rvt](https://hub.docker.com/repository/docker/safepkt/rvt)
  
@@ -115,7 +114,7 @@ In the end, here is a screenshot showing some of the differences between the fir
  against a trivial multiplication example
  - The reduction of steps down to a single-step program verification (responsible for source upload, with LLVM bitcode generation and symbolic execution with KLEE being abstracted away by the backend).
 
-![Transition between Phase 1 and Phase 2](https://i.imgur.com/8mDuhpz.png)
+![Transition between Phase 1 and Phase 2](./img/latest-mvp-ui-revamp.png?raw=true)
 
 ### Phase 3 - VS Code Extension implementation
 
@@ -131,7 +130,7 @@ The [SafePKT library](https://github.com/LedgerProject/safepkt_backend/blob/a6d7
    - the [HTTP entrypoint](https://github.com/LedgerProject/safepkt_backend/blob/a6d757c20958df480e97805f9f7e5f0d879fe243/src/http.rs) serving appropriate for each of the compliant HTTP requests
  - to port the [logic implemented](https://github.com/LedgerProject/safepkt_frontend/blob/f41c1a91c838355ed7c66379abee96dee91db95e/mixins/step/program-verification.ts#L73-L82) from the frontend when reaching out to the API exposed by the backend to a [VS Code extension](https://github.com/LedgerProject/safepkt_vscode-plugin/blob/e64a47ff5f0d3e76236565e7d0db51a31bed7a79/src/verifier.ts#L101-L143)
 
-![SafePKT Verifier VS Code Extension](https://i.imgur.com/xhsHgD9.png)
+![SafePKT Verifier VS Code Extension](./img/program-verification-with-vscode.png?raw=true)
 
 ## Bug fixing and improvements
 
