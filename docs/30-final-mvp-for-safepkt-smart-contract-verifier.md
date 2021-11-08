@@ -185,5 +185,5 @@ Relying on a ready-for-use container image is now a matter of configuring the ba
    - [a research paper "On the Termination of Borrow Checking for Rust"](https://github.com/LedgerProject/safepkt_paper)
    - [a single-page application as frontend component](https://github.com/LedgerProject/safepkt_frontend)   
    - [a backend component and a command-line interface](https://github.com/LedgerProject/safepkt_backend)   
-   - [SafePKT verifier as an extension for VS Code text editor](https://github.com/LedgerProject/safepkt_vscode-plugin) github.com/LedgerProject/safepkt_vscode-plugin and
+   - [SafePKT verifier as an extension for VS Code text editor](https://github.com/LedgerProject/safepkt_vscode-plugin) and
    - [a ready-for-verification smart-contract project example](https://github.com/LedgerProject/safepkt_smart-contract-example)
