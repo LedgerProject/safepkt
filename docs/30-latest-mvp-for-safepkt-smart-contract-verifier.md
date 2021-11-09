@@ -160,6 +160,18 @@ Here are some of the learnings that we could have gathered all along the project
    - the execution of arbitrary commands in Docker containers used as controlled environments where all the tools which would need could be set up and tear down at will  
    - the collection of reports and job completion status
 
+### False positives and panic hints
+
+When a test calls a function, which should panic (annotated with [#[should_panic]](https://github.com/paritytech/ink/blob/cca31543d338dcd69c7ac922988b91ebf170edb2/examples/multisig_plain/lib.rs#L695))  
+KLEE runs the intermediate representation for this function in the background,  
+and since KLEE is not yet made aware at this point of expected failures from panicking program,  
+there are false positives raised in these cases.
+
+In order to prevent such false positives from ruining the development experience,  
+it is now possible to add a conventional suffix to the end of test function names  
+e.g. adding `_fails` to the end of `zero_requirement_construction` would hint the backend component  
+about the that a failing test is expected to be equivalent to a passing test.
+
 ### Trade-offs
 
 Discarding the use of web UI at the end let us focus on the researcher / developer experience when it would come to relying on verification results provided by KLEE.
