@@ -186,19 +186,20 @@ Since program execution is required for analysis, there is still the open questi
 
 From a very naive perspective, there would be a need for limiting drastically i/o and networking operation along with CPU and memory allocation. All of those resources could be made available or reduced with options activated or deactivated by relying on the Docker engine. We've also been thinking about using [Firecracker](https://firecracker-microvm.github.io/) to further isolate the verification process and for now, we've considered that interested parties would be able to run verification pipelines by using their own internal infrastructure while offering a basic hard-coded example test project verification demo to begin with from one of our dedicated server. 
 
-### Improvements  
+### Improvements
 
 A list of possible improvements could be as long as a Christmas wishlist so let us make it as short as possible instead by focusing on the essential part:
+ - Addition of single-test run by providing a RegExp pattern
  - Parallelization of test-based verification by the backend 
  - Upgrade / Fix of rust dependencies (such as [`ink!` eDSL](https://github.com/paritytech/ink)) mandatory for running
    - compilation with rustc nightly emitting LLVM bitcode
    with compatibility fo one of most recent version of LLVM
-   - symbolic execution with KLEE to be made compatible with    latest version of LLVM  
+   - symbolic execution with KLEE to be made compatible with latest version of LLVM  
 
 See this issue from project-oak/rvt about [`cargo veriy` being incompatible with LLVM 11](https://github.com/project-oak/rust-verification-tools/issues/146#issuecomment-915474999)
 
  - Port of the verifier for continuous delivery with [GitHub Actions](https://docs.github.com/en/actions) pipelines  
- - Port of the verifier as an extension for [Jetbrains products](https://plugins.jetbrains.com/docs/intellij/getting-started.html) pipelines  
+ - Port of the verifier as an extension for [Jetbrains products](https://plugins.jetbrains.com/docs/intellij/getting-started.html)  
  - Port of the verifier as a [Sonarqube plugin](https://docs.sonarqube.org/latest/extend/developing-plugin/)  
 
 ## System stability, maintainability
