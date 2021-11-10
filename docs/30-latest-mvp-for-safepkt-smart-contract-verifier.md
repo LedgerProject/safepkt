@@ -245,3 +245,29 @@ Relying on a ready-for-use container image is now a matter of configuring the ba
    - [a backend component and a command-line interface](https://github.com/LedgerProject/safepkt_backend)   
    - [SafePKT verifier as an extension for VS Code text editor](https://github.com/LedgerProject/safepkt_vscode-plugin) and
    - [a ready-for-verification smart-contract project example](https://github.com/LedgerProject/safepkt_smart-contract-example)
+
+## Contact
+
+### GitHub
+
+ - [Caleb James de Lisle](https://github.com/cjdelisle)
+ - [Étienne Payet](https://github.com/etiennepayet)
+ - [David Pearce](https://github.com/DavePearce)
+ - [Fausto Spoto](https://github.com/spoto)
+ - [Thierry Marianne](https://twitter.com/thierrymarianne)
+
+### LinkedIn
+
+ - [David Pearce](https://www.linkedin.com/in/david-pearce-8592647/)
+ - [Fausto Spoto](https://www.linkedin.com/in/fausto-spoto-65171/)
+ - [Thierry Marianne](https://twitter.com/thierrymarianne)
+ - [CJDNS SASU](https://www.linkedin.com/company/cjdns/)
+
+### Twitter
+
+ - [Caleb James de Lisle](https://twitter.com/cjdelisle)
+ - [David Pearce](https://twitter.com/WhileyDave)
+ - [Thierry Marianne](https://twitter.com/thierrymarianne)
+ - [Université de La Réunion](https://twitter.com/univ_reunion)
+ - [Università di Verona](https://twitter.com/univerona)
+
