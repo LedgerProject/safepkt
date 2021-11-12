@@ -23,7 +23,10 @@ We're very grateful towards the following organizations, projects and people:
    - [FundingBox](https://fundingbox.com/)
    - [NGI LEDGER](https://ledgerproject.eu/)
    - [European Commission](https://ec.europa.eu/programmes/horizon2020/en/home)
- [![Blumorpho - Dyne - FundingBox - NGI LEDGER - European Commision](./img/all-logos.png?raw=true)]
+
+##
+
+ [![Blumorpho - Dyne - FundingBox - NGI LEDGER - European Commision](./img/all-logos.png?raw=true)
 
 ## Table of contents
 
