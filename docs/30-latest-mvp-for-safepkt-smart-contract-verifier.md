@@ -174,7 +174,7 @@ about the that a failing test is expected to be equivalent to a passing test.
 
 ### Trade-offs
 
-Discarding the use of web UI at the end let us focus on the researcher / developer experience when it would come to relying on verification results provided by KLEE.
+Discarding the use of [web UI](https://safepkt.weaving-the-web.org) at the end let us focus on the researcher / developer experience when it would come to relying on verification results provided by KLEE.
 
 Downloading VS Code text editor and installing [SafePKT verifier](https://marketplace.visualstudio.com/items?itemName=CJDNS.safepkt-verifier) extension is a matter of a couple of minutes, whereas running the single-page application could take longer at the moment because of the embedded text editor limitations (VS Code being an actual optimized text editor and our first online version being very far from perfect in supporting medium to large program when it comes to activating basic options like syntax coloring or symbols navigation).
 
