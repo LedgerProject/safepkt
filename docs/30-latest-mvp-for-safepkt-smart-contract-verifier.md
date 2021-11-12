@@ -8,6 +8,20 @@ You can find out more about the overall PKT project by going to: https://pkt.cas
 
 In the SafePKT project we are focused on improving software development efficiency (and therefore time to market) for software used within the PKT ecosystem (e.g. PacketCrypt / cjdns). As security breaches in cryptocurrency software often lead to irrecoverable loss, such projects have higher than normal security requirements. However in this innovative and competitive space, time to market is also a critical to a project's overall success. With the help of cutting edge research in the academic space, we are developing improved software verification tools which will be easier to use and more helpful to developers who will apply them to improving software development efficiency and security in projects within the PKT ecosystem.
 
+# Acknowledgment
+
+We're very grateful towards the following organizations, projects and people:
+ - the Project Oak maintainers for making [Rust Verifications Tools](https://project-oak.github.io/rust-verification-tools/), a dual-licensed open-source project (MIT / Apache).
+ The RVT tools allowed us to integrate with industrial-grade verification tools in a very effective way.
+ - the KLEE Symbolic Execution Engine maintainers
+ - the Rust community at large
+ - the JavaScript and NuxtJS community at large
+ - The University of Reunion Island and the University of Verona
+ - All members of the NGI-Ledger Consortium for accompanying us   
+ [![Blumorpho](./img/blumorpho-logo.png?raw=true)](https://www.blumorpho.com/) [![Dyne](./img/dyne-logo.png?raw=true)](https://www.dyne.org/ledger/)  
+ [![FundingBox](./img/funding-box-logo.png?raw=true)](https://fundingbox.com/) [![NGI LEDGER](./img/ledger-eu-logo.png?raw=true)](https://ledgerproject.eu/)  
+ [![European Commission](./img/european-commission-logo.png?raw=true)](https://ec.europa.eu/programmes/horizon2020/en/home)
+
 ## Table of contents
 
  - [The technology](#the-technology)
@@ -245,20 +259,6 @@ Relying on a ready-for-use container image is now a matter of configuring the ba
    - [a backend component and a command-line interface](https://github.com/LedgerProject/safepkt_backend)   
    - [SafePKT verifier as an extension for VS Code text editor](https://github.com/LedgerProject/safepkt_vscode-plugin) and
    - [a ready-for-verification smart-contract project example](https://github.com/LedgerProject/safepkt_smart-contract-example)
-
-# Acknowledgment
-
-We're very grateful towards the following organizations, projects and people:
- - the Project Oak maintainers for making [Rust Verifications Tools](https://project-oak.github.io/rust-verification-tools/), a dual-licensed open-source project (MIT / Apache).
- The RVT tools allowed us to integrate with industrial-grade verification tools in a very effective way.
- - the KLEE Symbolic Execution Engine maintainers
- - the Rust community at large
- - the JavaScript and NuxtJS community at large
- - The University of Reunion Island and the University of Verona
- - All members of the NGI-Ledger Consortium for accompanying us   
- [![Blumorpho](./img/blumorpho-logo.png?raw=true)](https://www.blumorpho.com/) [![Dyne](./img/dyne-logo.png?raw=true)](https://www.dyne.org/ledger/)  
- [![FundingBox](./img/funding-box-logo.png?raw=true)](https://fundingbox.com/) [![NGI LEDGER](./img/ledger-eu-logo.png?raw=true)](https://ledgerproject.eu/)  
- [![European Commission](./img/european-commission-logo.png?raw=true)](https://ec.europa.eu/programmes/horizon2020/en/home)
 
 ## Contact
 
