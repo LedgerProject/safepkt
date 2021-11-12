@@ -82,7 +82,9 @@ make contribution
 ## Acknowledgment
 
 We're very grateful towards all members of the NGI-Ledger Consortium for accompanying us  
-  [![Blumorpho](../main/docs/img/blumorpho-logo.png?raw=true)](https://www.blumorpho.com/) [![Dyne](../main/docs/img/dyne-logo.png?raw=true)](https://www.dyne.org/ledger/) [![FundingBox](../main/docs/img/funding-box-logo.png?raw=true)](https://fundingbox.com/) [![NGI LEDGER](../main/docs/img/ledger-eu-logo.png?raw=true)](https://ledger-3rd-open-call.fundingbox.com/)
+ [![Blumorpho](../main/img/blumorpho-logo.png?raw=true)](https://www.blumorpho.com/) [![Dyne](../main/img/dyne-logo.png?raw=true)](https://www.dyne.org/ledger/)  
+ [![FundingBox](../main/img/funding-box-logo.png?raw=true)](https://fundingbox.com/) [![NGI LEDGER](../main/img/ledger-eu-logo.png?raw=true)](https://ledgerproject.eu/)  
+ [![European Commission](../main/img/european-commission-logo.png?raw=true)](https://ec.europa.eu/programmes/horizon2020/en/home)
 
 ## License
 
