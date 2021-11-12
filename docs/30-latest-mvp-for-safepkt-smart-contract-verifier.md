@@ -26,7 +26,7 @@ We're very grateful towards the following organizations, projects and people:
 
 ##
 
- [![Blumorpho - Dyne - FundingBox - NGI LEDGER - European Commision](./img/all-logos.png?raw=true)
+ ![Blumorpho - Dyne - FundingBox - NGI LEDGER - European Commision](./img/all-logos.png?raw=true)
 
 ## Table of contents
 
