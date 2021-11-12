@@ -17,10 +17,13 @@ We're very grateful towards the following organizations, projects and people:
  - the Rust community at large
  - the JavaScript and NuxtJS community at large
  - The University of Reunion Island and the University of Verona
- - All members of the NGI-Ledger Consortium for accompanying us   
- [![Blumorpho](./img/blumorpho-logo.png?raw=true)](https://www.blumorpho.com/) [![Dyne](./img/dyne-logo.png?raw=true)](https://www.dyne.org/ledger/)  
- [![FundingBox](./img/funding-box-logo.png?raw=true)](https://fundingbox.com/) [![NGI LEDGER](./img/ledger-eu-logo.png?raw=true)](https://ledgerproject.eu/)  
- [![European Commission](./img/european-commission-logo.png?raw=true)](https://ec.europa.eu/programmes/horizon2020/en/home)
+ - All members of the NGI-Ledger Consortium for accompanying us
+   - [Blumorpho](https://www.blumorpho.com/)
+   - [Dyne](https://www.dyne.org/ledger/)
+   - [FundingBox](https://fundingbox.com/)
+   - [NGI LEDGER](https://ledgerproject.eu/)
+   - [European Commission](https://ec.europa.eu/programmes/horizon2020/en/home)
+ [![Blumorpho - Dyne - FundingBox - NGI LEDGER - European Commision](./img/all-logos.png?raw=true)]
 
 ## Table of contents
 
