@@ -232,6 +232,26 @@ See this issue from project-oak/rvt about [`cargo veriy` being incompatible with
 
 ## System stability, maintainability
 
+### Installation
+
+Installing a backend separatedly from an web server proxying HTTP requests can prove to be tricky,  
+because of access list permissions.  
+In a configuration, for which we have
+ - an nginx service running as `www-data` user  
+ proxying HTTP requests to a SafePKT backend instance running as user having name `rvt` and
+ - we would rely on system `uid:gid` to make an explicit mapping  
+ between a host and containers file systems 
+   - `1000:1000` for `www-data` in this case
+   - `1001:1001` for `rvt`
+
+A working strategy consists in ensuring that
+ - `safepkt_backend` repository clone belongs to `rvt.www-data` 
+ - `rvt` is the user running containers and writing to the file system mounted via docker engine
+ - `rvt` belongs to `www-data` group
+ - `rvt` belongs to [`docker` group](https://docs.docker.com/engine/install/linux-postinstall/)
+ - `www-data` is the user running the nginx instance
+
+
 ### Ballpark performance
 
 As of today, the verification process takes about 90s when executed from our dedicated server for a suite of about 30 tests without fuzzing. 
