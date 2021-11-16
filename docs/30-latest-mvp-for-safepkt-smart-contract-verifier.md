@@ -143,6 +143,14 @@ As a consequence, the HTTP API exposed by the backend inherited two additional s
    - GET `/source-restoration/{{ project_id }}/progress`  
    to get the completion status of a source restoration
 
+Additional routes have been added to the backend to facilitate project analysis management:
+   - `POST` `/uploaded_sources_listing/{project_id}`  
+   to run a container executing `ls` from the directory where uploaded sources are
+   - `GET` `/uploaded_sources_listing/{project_id}/report`  
+   to get the logs of the container which output contains all the uploaded sources id (`project_id`)
+   - `DELETE` `/program-verification/{project_id}`  
+   to stop container executing the verification process for a previously uploaded source under project id passed as parameter 
+
 ![SafePKT Command-Line Interface](./img/program-verification-in-cli.png?raw=true)
 
 Optimizing the construction of the RVT-based toolset itself was a subtask described in this [public issue](https://github.com/project-oak/rust-verification-tools/pull/149). No official Docker image could be attached to project-oak/rvt project but we eventually managed to publish our own set of images and tags to ease the backend component set up from the official Docker registry, with the latest tag being worth of about 2Gb of compressed image layers available from [https://hub.docker.com/repository/docker/safepkt/rvt](https://hub.docker.com/repository/docker/safepkt/rvt)
