@@ -22,3 +22,6 @@
 [submodule "safepkt-ink"]
 	path = safepkt-ink
 	url = https://github.com/LedgerProject/safepkt-ink
+[submodule "cli"]
+	path = cli
+	url = https://github.com/LedgerProject/safepkt_cli
