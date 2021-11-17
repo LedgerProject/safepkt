@@ -8,6 +8,16 @@ You can find out more about the overall PKT project by going to: https://pkt.cas
 
 In the SafePKT project we are focused on improving software development efficiency (and therefore time to market) for software used within the PKT ecosystem (e.g. PacketCrypt / cjdns). As security breaches in cryptocurrency software often lead to irrecoverable loss, such projects have higher than normal security requirements. However in this innovative and competitive space, time to market is also a critical to a project's overall success. With the help of cutting edge research in the academic space, we are developing improved software verification tools which will be easier to use and more helpful to developers who will apply them to improving software development efficiency and security in projects within the PKT ecosystem.
 
+## Demo
+
+An online demo of a rust-based smart contract verification is available from
+ - [https://safepkt.cjdns.fr](https://safepkt.cjdns.fr)
+
+Rust-based smart contract analysis and verification is also available to developers and
+researchers by installing [VS Code](https://code.visualstudio.com/download) and [SafePKT Verifier extension](https://marketplace.visualstudio.com/items?itemName=CJDNS.safepkt-verifier)
+from VS Code Marketplace.
+ - [https://marketplace.visualstudio.com/items?itemName=CJDNS.safepkt-verifier](https://marketplace.visualstudio.com/items?itemName=CJDNS.safepkt-verifier)
+
 # Acknowledgment
 
 We're very grateful towards the following organizations, projects and people:

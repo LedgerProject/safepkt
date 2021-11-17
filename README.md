@@ -16,6 +16,16 @@ See [SafePKT description](https://ledgerproject.github.io/home/#/teams/SafePKT)
  - [Acknowledgement](#acknowledgment)
  - [License](#license)
 
+## Demo
+
+An online demo of a rust-based smart contract verification is available from
+ - [https://safepkt.cjdns.fr](https://safepkt.cjdns.fr)
+
+Rust-based smart contract analysis and verification is also available to developers and
+researchers by installing [VS Code](https://code.visualstudio.com/download) and [SafePKT Verifier extension](https://marketplace.visualstudio.com/items?itemName=CJDNS.safepkt-verifier)
+from VS Code Marketplace.
+ - [https://marketplace.visualstudio.com/items?itemName=CJDNS.safepkt-verifier](https://marketplace.visualstudio.com/items?itemName=CJDNS.safepkt-verifier)
+
 ## Preview
 
 As of today, SafePKT offers an opportunity for
