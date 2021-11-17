@@ -120,7 +120,6 @@ Based on what we have learnt in Phase 1, we've realized from the feedback we've 
  - the most recent programs would not be well supported as the KLEE version we could rely upon was not compiled against the most up-to-date version of LLVM (available for `rustc` compiler available out there).  
 As a result the rust compiler version, we used to leverage Rust Verification Tools would not be most of the time compatible with the targeted programs, which were in essence alway quite edgy given the rapid pace of evolution in the field of blockchain smart contract implementation. 
 
-
 All these concerns led us to making the following decisions
 
  - 🎯 To reduce the number of steps down to the very strict minimum  
@@ -161,6 +160,25 @@ In the end, here is a screenshot showing some of the differences between the fir
  - The reduction of steps down to a single-step program verification (responsible for source upload, with LLVM bitcode generation and symbolic execution with KLEE being abstracted away by the backend).
 
 ![Transition between Phase 1 and Phase 2](./img/latest-mvp-ui-revamp.png?raw=true)
+
+#### Failed attempts and additional learning with Web Assembly as intermediate representation
+
+We have also put some efforts to convert a smart contract rust source into web assembly,  
+right before returning to plain C code by relying on the [WebAssembly Binary Toolkit (wabt)](https://github.com/WebAssembly/wabt).  
+
+However we had to quickly acknowledge such approach would be a deadend for our particular use case,
+as the amount of C code generated from `wasm`, for instance for some contracts like
+ - a [simple NFT implementation](https://github.com/polk4-net/substrate-nft) or
+ - by relying on a [Hyperledger Sawtooth SDK](https://github.com/hyperledger/sawtooth-sdk-rust) implementation in rust.
+
+At some point, either we ended up with  
+ - too much code to be analyze by klee, the symbolic execution engine or  
+ - too many failures hard to debug because of the numerous dependencies for the sdk we've tried to analyze.
+
+Most of the experiments, which has led us to this conclusion can be found or replayed as targets of a Makefile,  
+which can be found in our contribution clone of the [substrate-nft](https://github.com/thierrymarianne/contrib-substrate-nft/blob/main/nft/Makefile) project,  
+which is based on [ink! eDSL](https://github.com/paritytech/ink) to write smart contracts,  
+depending on the paritytech [substrate platform](https://github.com/paritytech/substrate).
 
 ### Phase 3 - VS Code Extension implementation
 
