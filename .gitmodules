@@ -19,3 +19,6 @@
 [submodule "safepkt-assert"]
 	path = safepkt-assert
 	url = https://github.com/LedgerProject/safepkt_assert
+[submodule "safepkt-ink"]
+	path = safepkt-ink
+	url = https://github.com/LedgerProject/safepkt-ink
