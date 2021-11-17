@@ -13,3 +13,6 @@
 [submodule "smart-contract-example"]
 	path = smart-contract-example
 	url = https://github.com/LedgerProject/safepkt_smart-contract-example
+[submodule "rust-verification-tools"]
+	path = rust-verification-tools
+	url = https://github.com/LedgerProject/safepkt_rust-verification-tools
