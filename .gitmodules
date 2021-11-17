@@ -16,3 +16,6 @@
 [submodule "rust-verification-tools"]
 	path = rust-verification-tools
 	url = https://github.com/LedgerProject/safepkt_rust-verification-tools
+[submodule "safepkt-assert"]
+	path = safepkt-assert
+	url = https://github.com/LedgerProject/safepkt_assert
