@@ -176,7 +176,7 @@ At some point, either we ended up with
  - too much code to be analyzed with klee (symbolic execution engine running under the wood) or  
  - too many failures hard to debug because of the numerous dependencies for the sdk we've tried to analyze.
 
-Most of the experiments, which has led us to this conclusion can be found or replayed as targets of a Makefile,  
+Most of the experiments, which has led us to this conclusion, can be found or replayed as targets of a Makefile,  
 available in our contribution clone of the [substrate-nft](https://github.com/thierrymarianne/contrib-substrate-nft/blob/main/nft/Makefile) project,  
 which is based on [ink! eDSL](https://github.com/paritytech/ink) to write smart contracts,  
 depending on the paritytech [substrate platform](https://github.com/paritytech/substrate).
