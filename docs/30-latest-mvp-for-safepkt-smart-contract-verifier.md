@@ -259,6 +259,16 @@ See this issue from project-oak/rvt about [`cargo veriy` being incompatible with
  - Port of the verifier as an extension for [Jetbrains products](https://plugins.jetbrains.com/docs/intellij/getting-started.html)  
  - Port of the verifier as a [Sonarqube plugin](https://docs.sonarqube.org/latest/extend/developing-plugin/)  
 
+### Conclusive results
+
+The default branch (`buggy-smart-contract`) available from SafePKT smart contract example,  
+offers a clear demonstration of how to leverage SafePKT verification tools,  
+in order to discover issues with a rust-based Smart Contract.
+
+The smart contract example here is based on [ERC20 technical standard](https://fr.wikipedia.org/wiki/ERC20), 
+and can be found in the following repository:  
+https://github.com/LedgerProject/safepkt_smart-contract-example
+
 ## System stability, maintainability
 
 ### Installation
@@ -279,7 +289,6 @@ A working strategy consists in ensuring that
  - `rvt` belongs to `www-data` group
  - `rvt` belongs to [`docker` group](https://docs.docker.com/engine/install/linux-postinstall/)
  - `www-data` is the user running the nginx instance
-
 
 ### Ballpark performance
 
