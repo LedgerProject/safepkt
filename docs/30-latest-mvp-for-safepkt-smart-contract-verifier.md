@@ -69,7 +69,7 @@ analyzing a rust-based smart-contract written on top of [Parity's ink! eDSL](htt
 
 While the backend is responsible for handling all the transformation logic from a program source file or a rust library-oriented or binary-oriented project, the frontend (single-page application) is responsible for enabling developers and researchers to triggers the verification process from a web browser before receiving reports usually made available and formatted for command-line shells.
 
-In the same vein as for the frontend component, the command-line binary emitted at compilation of the backend, provides with the capability to verify a rust program when the constraints needed by the verifier are followed per instruction. Such verification process consists in running successively containerized jobs consisting in the following steps:
+In the same vein as for the frontend component, the command-line binary emitted at compilation of the backend, provides with the capability to verify a rust program when the constraints needed by the verifier are checked on a per instruction basis. Such verification process consists in running successively containerized jobs consisting in the following steps:
  - Scaffolding of a new rust project uniquely identified from a  rust program source file  
  - Generation of LLVM bitcode from the newly created project   
  - Symbolic execution of the program based on two strategies
@@ -199,10 +199,10 @@ As SafePKT verifier has been designed and implemented since the beginning as a s
  - to reduce the [number of steps](https://github.com/LedgerProject/safepkt_backend/blob/a6d757c20958df480e97805f9f7e5f0d879fe243/src/infrastructure/verification.rs#L14-L16) for the overall verification process (from the backend or/and the frontend by considering deployment for both components or one of them only)
  - to add new steps to the verification pipeline matching a new route of the HTTP API exposed by backend 
  - to remove deprecated steps once everything was working as expected from the frontend
- - to introduce the SafePKT CLI command communicating internally with the internal backend API.
+ - to introduce the SafePKT CLI command communicating internally with the backend API.
 The [SafePKT library](https://github.com/LedgerProject/safepkt_backend/blob/a6d757c20958df480e97805f9f7e5f0d879fe243/src/lib.rs) is consumed by two separate entrypoints:
    - the [CLI entrypoint](https://github.com/LedgerProject/safepkt_backend/blob/a6d757c20958df480e97805f9f7e5f0d879fe243/src/cli.rs)
-   - the [HTTP entrypoint](https://github.com/LedgerProject/safepkt_backend/blob/a6d757c20958df480e97805f9f7e5f0d879fe243/src/http.rs) serving appropriate for each of the compliant HTTP requests
+   - the [HTTP entrypoint](https://github.com/LedgerProject/safepkt_backend/blob/a6d757c20958df480e97805f9f7e5f0d879fe243/src/http.rs) serving responses one can expect for each of the compliant HTTP requests
  - to port the [logic implemented](https://github.com/LedgerProject/safepkt_frontend/blob/f41c1a91c838355ed7c66379abee96dee91db95e/mixins/step/program-verification.ts#L73-L82) from the frontend when reaching out to the API exposed by the backend to a [VS Code extension](https://github.com/LedgerProject/safepkt_vscode-plugin/blob/e64a47ff5f0d3e76236565e7d0db51a31bed7a79/src/verifier.ts#L101-L143)
 
 ![SafePKT Verifier VS Code Extension](./img/program-verification-with-vscode.png?raw=true)
